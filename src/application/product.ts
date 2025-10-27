@@ -21,7 +21,7 @@ const getAllProducts = async (
     const filter: any = {};
 
     // Filter by category
-    if (categoryId) {
+    if (categoryId && categoryId !== "null" && categoryId !== "undefined") {
       filter.categoryId = categoryId;
     }
 
